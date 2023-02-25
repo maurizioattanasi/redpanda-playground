@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{221DF7E2-BC2B-48A0-BE94-091BA29A16A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redpanda-playground.domain", "src\redpanda-playground.domain\redpanda-playground.domain.csproj", "{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redpanda-playground.infrastructure", "src\redpanda-playground.infrastructure\redpanda-playground.infrastructure.csproj", "{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B5012E41-1EDE-4FE0-A47B-522E5C20606E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redpanda-playground.infrastructure.integration-tests", "test\redpanda-playground.infrastructure.integration-tests\redpanda-playground.infrastructure.integration-tests.csproj", "{4F9EF300-472E-4B0D-B04A-2318AF98BB7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9EF300-472E-4B0D-B04A-2318AF98BB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9EF300-472E-4B0D-B04A-2318AF98BB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9EF300-472E-4B0D-B04A-2318AF98BB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9EF300-472E-4B0D-B04A-2318AF98BB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFBA66D5-8D14-4994-95FD-3D0BFA1BEFD3} = {221DF7E2-BC2B-48A0-BE94-091BA29A16A5}
+		{28BABFC3-6C1D-45CF-AE43-5CCE2C9EFB74} = {221DF7E2-BC2B-48A0-BE94-091BA29A16A5}
+		{4F9EF300-472E-4B0D-B04A-2318AF98BB7C} = {B5012E41-1EDE-4FE0-A47B-522E5C20606E}
+	EndGlobalSection
+EndGlobal

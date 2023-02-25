@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package redpanda_playground.contracts;
+
+import "google/protobuf/timestamp.proto";
+
+message OHLCV {
+    google.protobuf.Timestamp time = 1;
+
+    optional string symbol = 2;
+
+    optional float open = 3;
+
+    optional float high = 4;
+
+    optional float low = 5;
+
+    optional float close = 6;
+
+    optional float volume = 7;
+}
