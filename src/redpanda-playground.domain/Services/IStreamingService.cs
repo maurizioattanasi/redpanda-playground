@@ -1,6 +1,6 @@
 namespace redpanda_playground.domain;
 
-public interface IStreamingService<out TData> where TData : class
+public interface IStreamingService<out T> where T : class
 {
     /// <summary>
     /// Subscribes a topic (oor more than one)
@@ -14,5 +14,5 @@ public interface IStreamingService<out TData> where TData : class
     /// </summary>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    IAsyncEnumerable<TData> GetData(CancellationToken cancellationToken = default);
+    IAsyncEnumerable<T> GetData(CancellationToken cancellationToken = default);
 }
