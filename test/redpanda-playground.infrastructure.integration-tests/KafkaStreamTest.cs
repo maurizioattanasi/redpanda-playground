@@ -100,7 +100,7 @@ public class KafkaStreamTest
             Volume = 278.445F
         };
         //await CreateTopicAsync();
-        _streamingService.Subscribe(_topics[0], false);
+        _streamingService.Subscribe(_topics[0]);
         IAsyncEnumerator<OHLCV> e = _streamingService.GetData().GetAsyncEnumerator();
 
         /// Act
